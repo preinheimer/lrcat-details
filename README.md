@@ -165,7 +165,7 @@ CREATE TABLE AgLibraryRootFolder (
 
 This table identifies every folder that contains images in your Lightroom catalog. The `rootFolder` item refers to the `id_local` from the AgLibraryRootFolder table. `pathFromRoot` shows the path from the root folder to the image. 
 
-**95014**|**07FDAC5B-9E68-49FA-A001-96092AF60BCD**|**2019/2019-06-02/**|**446919**
+**id_local**|**id_global**|**pathFromRoot**|**rootFolder**
 -----|-----|-----|-----
 32458|0A66049E-85BB-4E22-B037-97B98901558A|2018/2018-12-25/|446919
 612894|0C96891D-AC5D-480C-AB20-07C909CEB5BB|2020/2020-02-21/|56756
