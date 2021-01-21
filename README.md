@@ -32,118 +32,6 @@ SQLite can give you a list of tables using the `.tables` command.
 
 There are 111 tables in the database as of Lightroom Classic 8.4.1 They are:
 
- - Adobe_AdditionalMetadata
- - Adobe_faceProperties
- - Adobe_imageDevelopBeforeSettings
- - Adobe_imageDevelopSettings
- - Adobe_imageProofSettings
- - Adobe_imageProperties
- - Adobe_images
- - Adobe_libraryImageDevelop3DLUTColorTable
- - Adobe_libraryImageDevelopHistoryStep
- - Adobe_libraryImageDevelopSnapshot
- - Adobe_libraryImageFaceProcessHistory
- - Adobe_namedIdentityPlate
- - Adobe_variables
- - Adobe_variablesTable
- - AgDNGProxyInfo
- - AgDNGProxyInfoUpdater
- - AgDeletedOzAlbumAssetIds
- - AgDeletedOzAlbumIds
- - AgDeletedOzAssetIds
- - AgDeletedOzSpaceIds
- - AgFolderContent
- - AgHarvestedDNGMetadata
- - AgHarvestedExifMetadata
- - AgHarvestedIptcMetadata
- - AgHarvestedMetadataWorklist
- - AgInternedExifCameraModel
- - AgInternedExifCameraSN
- - AgInternedExifLens
- - AgInternedIptcCity
- - AgInternedIptcCountry
- - AgInternedIptcCreator
- - AgInternedIptcIsoCountryCode
- - AgInternedIptcJobIdentifier
- - AgInternedIptcLocation
- - AgInternedIptcState
- - AgLastCatalogExport
- - AgLibraryCollection
- - AgLibraryCollectionChangeCounter
- - AgLibraryCollectionContent
- - AgLibraryCollectionCoverImage
- - AgLibraryCollectionImage
- - AgLibraryCollectionImageChangeCounter
- - AgLibraryCollectionImageOzAlbumAssetIds
- - AgLibraryCollectionImageOzSortOrder
- - AgLibraryCollectionLabel
- - AgLibraryCollectionOzAlbumIds
- - AgLibraryCollectionStack
- - AgLibraryCollectionStackData
- - AgLibraryCollectionStackImage
- - AgLibraryCollectionSyncedAlbumData
- - AgLibraryCollectionTrackedAssets
- - AgLibraryFace
- - AgLibraryFaceCluster
- - AgLibraryFaceData
- - AgLibraryFile
- - AgLibraryFileAssetMetadata
- - AgLibraryFolder
- - AgLibraryFolderFavorite
- - AgLibraryFolderLabel
- - AgLibraryFolderStack
- - AgLibraryFolderStackData
- - AgLibraryFolderStackImage
- - AgLibraryIPTC
- - AgLibraryImageChangeCounter
- - AgLibraryImageOzAssetIds
- - AgLibraryImageSearchData
- - AgLibraryImageSyncedAssetData
- - AgLibraryImageXMPUpdater
- - AgLibraryImport
- - AgLibraryImportImage
- - AgLibraryKeyword
- - AgLibraryKeywordCooccurrence
- - AgLibraryKeywordFace
- - AgLibraryKeywordImage
- - AgLibraryKeywordPopularity
- - AgLibraryKeywordSynonym
- - AgLibraryOzCommentIds
- - AgLibraryOzFavoriteIds
- - AgLibraryOzFeedbackInfo
- - AgLibraryPublishedCollection
- - AgLibraryPublishedCollectionContent
- - AgLibraryPublishedCollectionImage
- - AgLibraryPublishedCollectionLabel
- - AgLibraryRootFolder
- - AgLibraryUpdatedImages
- - AgMRULists
- - AgMetadataSearchIndex
- - AgOutputImageAsset
- - AgOzSpaceAlbumIds
- - AgOzSpaceIds
- - AgPendingOzAlbumAssetIds
- - AgPendingOzAssetBinaryDownloads
- - AgPendingOzAssets
- - AgPhotoComment
- - AgPhotoProperty
- - AgPhotoPropertyArrayElement
- - AgPhotoPropertySpec
- - AgPublishListenerWorklist
- - AgRemotePhoto
- - AgSearchablePhotoProperty
- - AgSearchablePhotoPropertyArrayElement
- - AgSourceColorProfileConstants
- - AgSpecialSourceContent
- - AgTempImages
- - AgUnsupportedOzAssets
- - AgVideoInfo
- - LrMobileSyncChangeCounter
- - MigratedCollectionImages
- - MigratedCollections
- - MigratedImages
- - MigratedInfo
- - MigrationSchemaVersion
 
 
 ## AgLibraryRootFolder
@@ -170,6 +58,14 @@ This table identifies every folder that contains images in your Lightroom catalo
 32458|0A66049E-85BB-4E22-B037-97B98901558A|2018/2018-12-25/|446919
 612894|0C96891D-AC5D-480C-AB20-07C909CEB5BB|2020/2020-02-21/|56756
 4746|0CBC88E1-41C2-41B7-A64D-876AE5EC8EAF|2018/2018-08-25/|446919
+
+
+**id_local**|**id_global**|**absolutePath**|**Name**|**relativePathFromCatalog**
+-----|-----|-----|-----|-----
+56756|2E7D798A-1F70-4C42-883C-86D77E1CF35C|/Users/paulreinheimer/Pictures/|Pictures|../
+97393|2DAC0F1E-0095-44B1-A0EA-E8F01F284511|/Users/paulreinheimer/Dropbox/Camera Uploads/|Camera Uploads|../../Dropbox/Camera Uploads/
+446919|E0E0F8AC-5B43-40DD-9D56-4E2219A9A3E3|/Users/paulreinheimer/Desktop/|Desktop|../../Desktop/
+520597|713C3600-8034-43A1-83B3-B59EC801E596|/Users/paulreinheimer/Downloads/|Downloads|../../Downloads/
 
 ```
 CREATE TABLE AgLibraryFolder (
