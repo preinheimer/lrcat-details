@@ -32,116 +32,116 @@ SQLite can give you a list of tables using the `.tables` command.
 
 There are 111 tables in the database as of Lightroom Classic 8.4.1 They are:
 
-Adobe_AdditionalMetadata
-Adobe_faceProperties
-Adobe_imageDevelopBeforeSettings
-Adobe_imageDevelopSettings
-Adobe_imageProofSettings
-Adobe_imageProperties
-Adobe_images
-Adobe_libraryImageDevelop3DLUTColorTable
-Adobe_libraryImageDevelopHistoryStep
-Adobe_libraryImageDevelopSnapshot
-Adobe_libraryImageFaceProcessHistory
-Adobe_namedIdentityPlate
-Adobe_variables
-Adobe_variablesTable
-AgDNGProxyInfo
-AgDNGProxyInfoUpdater
-AgDeletedOzAlbumAssetIds
-AgDeletedOzAlbumIds
-AgDeletedOzAssetIds
-AgDeletedOzSpaceIds
-AgFolderContent
-AgHarvestedDNGMetadata
-AgHarvestedExifMetadata
-AgHarvestedIptcMetadata
-AgHarvestedMetadataWorklist
-AgInternedExifCameraModel
-AgInternedExifCameraSN
-AgInternedExifLens
-AgInternedIptcCity
-AgInternedIptcCountry
-AgInternedIptcCreator
-AgInternedIptcIsoCountryCode
-AgInternedIptcJobIdentifier
-AgInternedIptcLocation
-AgInternedIptcState
-AgLastCatalogExport
-AgLibraryCollection
-AgLibraryCollectionChangeCounter
-AgLibraryCollectionContent
-AgLibraryCollectionCoverImage
-AgLibraryCollectionImage
-AgLibraryCollectionImageChangeCounter
-AgLibraryCollectionImageOzAlbumAssetIds
-AgLibraryCollectionImageOzSortOrder
-AgLibraryCollectionLabel
-AgLibraryCollectionOzAlbumIds
-AgLibraryCollectionStack
-AgLibraryCollectionStackData
-AgLibraryCollectionStackImage
-AgLibraryCollectionSyncedAlbumData
-AgLibraryCollectionTrackedAssets
-AgLibraryFace
-AgLibraryFaceCluster
-AgLibraryFaceData
-AgLibraryFile
-AgLibraryFileAssetMetadata
-AgLibraryFolder
-AgLibraryFolderFavorite
-AgLibraryFolderLabel
-AgLibraryFolderStack
-AgLibraryFolderStackData
-AgLibraryFolderStackImage
-AgLibraryIPTC
-AgLibraryImageChangeCounter
-AgLibraryImageOzAssetIds
-AgLibraryImageSearchData
-AgLibraryImageSyncedAssetData
-AgLibraryImageXMPUpdater
-AgLibraryImport
-AgLibraryImportImage
-AgLibraryKeyword
-AgLibraryKeywordCooccurrence
-AgLibraryKeywordFace
-AgLibraryKeywordImage
-AgLibraryKeywordPopularity
-AgLibraryKeywordSynonym
-AgLibraryOzCommentIds
-AgLibraryOzFavoriteIds
-AgLibraryOzFeedbackInfo
-AgLibraryPublishedCollection
-AgLibraryPublishedCollectionContent
-AgLibraryPublishedCollectionImage
-AgLibraryPublishedCollectionLabel
-AgLibraryRootFolder
-AgLibraryUpdatedImages
-AgMRULists
-AgMetadataSearchIndex
-AgOutputImageAsset
-AgOzSpaceAlbumIds
-AgOzSpaceIds
-AgPendingOzAlbumAssetIds
-AgPendingOzAssetBinaryDownloads
-AgPendingOzAssets
-AgPhotoComment
-AgPhotoProperty
-AgPhotoPropertyArrayElement
-AgPhotoPropertySpec
-AgPublishListenerWorklist
-AgRemotePhoto
-AgSearchablePhotoProperty
-AgSearchablePhotoPropertyArrayElement
-AgSourceColorProfileConstants
-AgSpecialSourceContent
-AgTempImages
-AgUnsupportedOzAssets
-AgVideoInfo
-LrMobileSyncChangeCounter
-MigratedCollectionImages
-MigratedCollections
-MigratedImages
-MigratedInfo
-MigrationSchemaVersion
+ - Adobe_AdditionalMetadata
+ - Adobe_faceProperties
+ - Adobe_imageDevelopBeforeSettings
+ - Adobe_imageDevelopSettings
+ - Adobe_imageProofSettings
+ - Adobe_imageProperties
+ - Adobe_images
+ - Adobe_libraryImageDevelop3DLUTColorTable
+ - Adobe_libraryImageDevelopHistoryStep
+ - Adobe_libraryImageDevelopSnapshot
+ - Adobe_libraryImageFaceProcessHistory
+ - Adobe_namedIdentityPlate
+ - Adobe_variables
+ - Adobe_variablesTable
+ - AgDNGProxyInfo
+ - AgDNGProxyInfoUpdater
+ - AgDeletedOzAlbumAssetIds
+ - AgDeletedOzAlbumIds
+ - AgDeletedOzAssetIds
+ - AgDeletedOzSpaceIds
+ - AgFolderContent
+ - AgHarvestedDNGMetadata
+ - AgHarvestedExifMetadata
+ - AgHarvestedIptcMetadata
+ - AgHarvestedMetadataWorklist
+ - AgInternedExifCameraModel
+ - AgInternedExifCameraSN
+ - AgInternedExifLens
+ - AgInternedIptcCity
+ - AgInternedIptcCountry
+ - AgInternedIptcCreator
+ - AgInternedIptcIsoCountryCode
+ - AgInternedIptcJobIdentifier
+ - AgInternedIptcLocation
+ - AgInternedIptcState
+ - AgLastCatalogExport
+ - AgLibraryCollection
+ - AgLibraryCollectionChangeCounter
+ - AgLibraryCollectionContent
+ - AgLibraryCollectionCoverImage
+ - AgLibraryCollectionImage
+ - AgLibraryCollectionImageChangeCounter
+ - AgLibraryCollectionImageOzAlbumAssetIds
+ - AgLibraryCollectionImageOzSortOrder
+ - AgLibraryCollectionLabel
+ - AgLibraryCollectionOzAlbumIds
+ - AgLibraryCollectionStack
+ - AgLibraryCollectionStackData
+ - AgLibraryCollectionStackImage
+ - AgLibraryCollectionSyncedAlbumData
+ - AgLibraryCollectionTrackedAssets
+ - AgLibraryFace
+ - AgLibraryFaceCluster
+ - AgLibraryFaceData
+ - AgLibraryFile
+ - AgLibraryFileAssetMetadata
+ - AgLibraryFolder
+ - AgLibraryFolderFavorite
+ - AgLibraryFolderLabel
+ - AgLibraryFolderStack
+ - AgLibraryFolderStackData
+ - AgLibraryFolderStackImage
+ - AgLibraryIPTC
+ - AgLibraryImageChangeCounter
+ - AgLibraryImageOzAssetIds
+ - AgLibraryImageSearchData
+ - AgLibraryImageSyncedAssetData
+ - AgLibraryImageXMPUpdater
+ - AgLibraryImport
+ - AgLibraryImportImage
+ - AgLibraryKeyword
+ - AgLibraryKeywordCooccurrence
+ - AgLibraryKeywordFace
+ - AgLibraryKeywordImage
+ - AgLibraryKeywordPopularity
+ - AgLibraryKeywordSynonym
+ - AgLibraryOzCommentIds
+ - AgLibraryOzFavoriteIds
+ - AgLibraryOzFeedbackInfo
+ - AgLibraryPublishedCollection
+ - AgLibraryPublishedCollectionContent
+ - AgLibraryPublishedCollectionImage
+ - AgLibraryPublishedCollectionLabel
+ - AgLibraryRootFolder
+ - AgLibraryUpdatedImages
+ - AgMRULists
+ - AgMetadataSearchIndex
+ - AgOutputImageAsset
+ - AgOzSpaceAlbumIds
+ - AgOzSpaceIds
+ - AgPendingOzAlbumAssetIds
+ - AgPendingOzAssetBinaryDownloads
+ - AgPendingOzAssets
+ - AgPhotoComment
+ - AgPhotoProperty
+ - AgPhotoPropertyArrayElement
+ - AgPhotoPropertySpec
+ - AgPublishListenerWorklist
+ - AgRemotePhoto
+ - AgSearchablePhotoProperty
+ - AgSearchablePhotoPropertyArrayElement
+ - AgSourceColorProfileConstants
+ - AgSpecialSourceContent
+ - AgTempImages
+ - AgUnsupportedOzAssets
+ - AgVideoInfo
+ - LrMobileSyncChangeCounter
+ - MigratedCollectionImages
+ - MigratedCollections
+ - MigratedImages
+ - MigratedInfo
+ - MigrationSchemaVersion
 
