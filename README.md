@@ -1,2 +1,147 @@
 # lrcat-details
 Detailed information, and maybe eventually scripts to work with the Lightroom Catalog file
+
+## .lrcat Information
+
+The file is a [SQLite](https://sqlite.org/index.html) database, and can be opened without modification by any SQLite tool. The command line tools work well, [DB Browser for SQLite](https://sqlitebrowser.org/) also works well. 
+
+The file itself can be quite large, mine (amateur photographer) is ~189MB. 
+
+The database contains numerous tables. This document shall attempt to indicate their purpose, and other key information.
+
+## Warning
+
+Messing up your lightroom catalog is a fantastic way to start from scratch. Back it up multiple places, never edit the file while Lightroom is open. 
+
+
+### Quick look at the database
+
+After installing SQLite, you can open the file with the `.open` command, giving it the filename of your Lightroom Catalog, for me that's `.open "Lightroom Catalog.lrcat"`. You need to quote the filename as there's a space in it. 
+
+Pauls-MBP-1675:Lightroom paulreinheimer$ /usr/local/opt/sqlite/bin/sqlite3
+SQLite version 3.34.0 2020-12-01 16:14:00
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite> .open "Lightroom Catalog.lrcat"
+
+SQLite can give you a list of tables using the `.tables` command. 
+
+
+### Tables 
+
+There are 111 tables in the database as of Lightroom Classic 8.4.1 They are:
+
+Adobe_AdditionalMetadata
+Adobe_faceProperties
+Adobe_imageDevelopBeforeSettings
+Adobe_imageDevelopSettings
+Adobe_imageProofSettings
+Adobe_imageProperties
+Adobe_images
+Adobe_libraryImageDevelop3DLUTColorTable
+Adobe_libraryImageDevelopHistoryStep
+Adobe_libraryImageDevelopSnapshot
+Adobe_libraryImageFaceProcessHistory
+Adobe_namedIdentityPlate
+Adobe_variables
+Adobe_variablesTable
+AgDNGProxyInfo
+AgDNGProxyInfoUpdater
+AgDeletedOzAlbumAssetIds
+AgDeletedOzAlbumIds
+AgDeletedOzAssetIds
+AgDeletedOzSpaceIds
+AgFolderContent
+AgHarvestedDNGMetadata
+AgHarvestedExifMetadata
+AgHarvestedIptcMetadata
+AgHarvestedMetadataWorklist
+AgInternedExifCameraModel
+AgInternedExifCameraSN
+AgInternedExifLens
+AgInternedIptcCity
+AgInternedIptcCountry
+AgInternedIptcCreator
+AgInternedIptcIsoCountryCode
+AgInternedIptcJobIdentifier
+AgInternedIptcLocation
+AgInternedIptcState
+AgLastCatalogExport
+AgLibraryCollection
+AgLibraryCollectionChangeCounter
+AgLibraryCollectionContent
+AgLibraryCollectionCoverImage
+AgLibraryCollectionImage
+AgLibraryCollectionImageChangeCounter
+AgLibraryCollectionImageOzAlbumAssetIds
+AgLibraryCollectionImageOzSortOrder
+AgLibraryCollectionLabel
+AgLibraryCollectionOzAlbumIds
+AgLibraryCollectionStack
+AgLibraryCollectionStackData
+AgLibraryCollectionStackImage
+AgLibraryCollectionSyncedAlbumData
+AgLibraryCollectionTrackedAssets
+AgLibraryFace
+AgLibraryFaceCluster
+AgLibraryFaceData
+AgLibraryFile
+AgLibraryFileAssetMetadata
+AgLibraryFolder
+AgLibraryFolderFavorite
+AgLibraryFolderLabel
+AgLibraryFolderStack
+AgLibraryFolderStackData
+AgLibraryFolderStackImage
+AgLibraryIPTC
+AgLibraryImageChangeCounter
+AgLibraryImageOzAssetIds
+AgLibraryImageSearchData
+AgLibraryImageSyncedAssetData
+AgLibraryImageXMPUpdater
+AgLibraryImport
+AgLibraryImportImage
+AgLibraryKeyword
+AgLibraryKeywordCooccurrence
+AgLibraryKeywordFace
+AgLibraryKeywordImage
+AgLibraryKeywordPopularity
+AgLibraryKeywordSynonym
+AgLibraryOzCommentIds
+AgLibraryOzFavoriteIds
+AgLibraryOzFeedbackInfo
+AgLibraryPublishedCollection
+AgLibraryPublishedCollectionContent
+AgLibraryPublishedCollectionImage
+AgLibraryPublishedCollectionLabel
+AgLibraryRootFolder
+AgLibraryUpdatedImages
+AgMRULists
+AgMetadataSearchIndex
+AgOutputImageAsset
+AgOzSpaceAlbumIds
+AgOzSpaceIds
+AgPendingOzAlbumAssetIds
+AgPendingOzAssetBinaryDownloads
+AgPendingOzAssets
+AgPhotoComment
+AgPhotoProperty
+AgPhotoPropertyArrayElement
+AgPhotoPropertySpec
+AgPublishListenerWorklist
+AgRemotePhoto
+AgSearchablePhotoProperty
+AgSearchablePhotoPropertyArrayElement
+AgSourceColorProfileConstants
+AgSpecialSourceContent
+AgTempImages
+AgUnsupportedOzAssets
+AgVideoInfo
+LrMobileSyncChangeCounter
+MigratedCollectionImages
+MigratedCollections
+MigratedImages
+MigratedInfo
+MigrationSchemaVersion
+
