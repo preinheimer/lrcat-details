@@ -145,3 +145,34 @@ There are 111 tables in the database as of Lightroom Classic 8.4.1 They are:
  - MigratedInfo
  - MigrationSchemaVersion
 
+
+## AgLibraryRootFolder
+
+This table stores details about the various "root" folders for your Lightroom catalog. All folders within AgLibraryFolder will identify one of these as being a root folder, and store their path relative to this root. 
+
+```
+CREATE TABLE AgLibraryRootFolder (
+    id_local INTEGER PRIMARY KEY,
+    id_global UNIQUE NOT NULL,
+    absolutePath UNIQUE NOT NULL DEFAULT '',
+    name NOT NULL DEFAULT '',
+    relativePathFromCatalog
+)
+
+```
+
+## AgLibraryFolder
+
+This table identifies every folder that contains images in your Lightroom catalog. The `rootFolder` item refers to the `id_local` from the AgLibraryRootFolder table. `pathFromRoot` shows the path from the root folder to the image. 
+
+
+
+```
+CREATE TABLE AgLibraryFolder (
+    id_local INTEGER PRIMARY KEY,
+    id_global UNIQUE NOT NULL,
+    pathFromRoot NOT NULL DEFAULT '',
+    rootFolder INTEGER NOT NULL DEFAULT 0
+)
+```
+
